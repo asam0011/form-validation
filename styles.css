@@ -1,0 +1,122 @@
+body{
+    margin:0;
+    background-color: #F5F5F5;
+}
+
+
+html{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    line-height: 1rem;
+}
+
+h2{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.box{
+    border: 1px solid #353535;
+    background-color: #F5F5F5;
+    margin: 1rem;
+    padding: 0.25rem;
+    position: absolute;
+    left: 4rem;
+    top: 18px;
+    
+}
+
+form{
+    max-width: 25rem;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: #DDD;
+    border-radius: 5px;
+    margin-top: 4rem;
+  
+}
+
+
+
+
+
+input[type="submit"] {
+        background-color: #6495ED;
+        color: white;
+        border: none;
+        margin-top: 1em;
+        padding: 0.85em;
+        font-size: 1em;
+        width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: #6495ED;
+    border: 2px solid #6495ED;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+textarea{
+    width: 100%;
+}
+
+input[type=text]{
+    width: 100%;
+}
+
+.errors {
+    color: red;
+}
+
+.feedback {
+    color: blue;
+}
+
+
+@media only screen and (min-width: 960px) { 
+   
+    form{
+        max-width: 50rem;
+       display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        margin: 2rem;
+        grid-gap: 1rem;
+        margin-top: 4rem;
+    }
+
+
+    .box{
+        border: 1px solid #353535;
+        background-color: #F5F5F5;
+        margin: 1rem;
+        padding: 0.25rem;
+        position: absolute;
+        left: 4rem;
+        top: 1px;
+        
+    }
+
+    .fullname{
+        grid-column: 1/2;
+    }
+
+    .email{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .message{
+        grid-column: 1/3;
+    }
+
+    .submit{
+        grid-column: 1/3;
+        margin: 0 10rem;
+    }
+
+   
+}
