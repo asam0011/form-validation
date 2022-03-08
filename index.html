@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <form>
+         <section class="box">
+             <h2>Form Assignment</h2>
+         </section>
+        <section class="fullname">
+                <label for="fullname">Full name</label><br>
+                <input type="text" name="fullname" id="fullname" value="">
+        </section>      
+       
+    <br>
+        <section class="email">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email" value="">
+        </section>
+
+    <br>
+        <section class="message">
+        <label for="textarea">Message</label><br><br>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter text here."></textarea>
+        </section>
+        
+        <section class="submit">
+                <input type="submit" name="collect-data" value="submit" />
+        </section>
+        </section>
+</form>
+      
+        <p class="feedback"></p>
+        <ul class="errors"></ul>
+
+<script src="./js/index.js"></script>
+</body>
+
+</html>
